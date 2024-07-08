@@ -31,3 +31,7 @@ click on the **open all** link at the top of the graph to see the whole file dat
 run the **2-parse_incident_summary.py** script and have a look the parsing result into the console.
 
 This script gives some example of functions that parse the JSON file and extract  some data from it.
+
+## Get access separately to incidents, sightings, judgments
+
+[Dealing with XDR CTIM](https://github.com/pcardotatgit/XDR_Workflows_and_Stuffs/tree/master/13-Interact_with_CTIM)
