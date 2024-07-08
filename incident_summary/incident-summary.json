@@ -1,0 +1,440 @@
+[
+    {
+        "assignees": [
+            "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0"
+        ],
+        "client_id": "client-xxxxx",
+        "confidence": "High",
+        "context": {
+            "attack_patterns": [],
+            "indicators": [
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2023-12-30T16:56:17.288Z",
+                    "description": "Device exchanged traffic with an IP address on a user-supplied watchlist or attempted to resolve a domain name on that watchlist. This may indicate a device is compromised. (Watchlists: XDR_IPV4_Feed)",
+                    "external_ids": [
+                        "swc-alert_type-9269f51e996d87d305bb51cb406242ad0af82be5"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/indicator/indicator-9c39b5cf-1948-4505-840b-06f6e968cc52",
+                    "modified": "2023-12-30T16:56:17.288Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "producer": "Cisco XDR Analytics ",
+                    "schema_version": "1.3.13",
+                    "source": "Cisco XDR Analytics ",
+                    "source_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/settings/alerts/priorities",
+                    "timestamp": "2023-12-30T16:56:17.288Z",
+                    "title": "User Watchlist Hit",
+                    "tlp": "amber",
+                    "type": "indicator",
+                    "valid_time": {
+                        "end_time": "2525-01-01T00:00:00.000Z",
+                        "start_time": "2023-10-30T12:44:56.000Z"
+                    }
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2023-12-30T16:56:17.288Z",
+                    "description": "Device communicated with an IP address that is on a watchlist (either explicitly or implicitly via a domain name).",
+                    "external_ids": [
+                        "swc-observation_type-6c356a00af60a3947c9b4613afc513a5deeb6cf9"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/indicator/indicator-30455240-d11c-4800-b11d-4f4fc555164f",
+                    "modified": "2023-12-30T16:56:17.288Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "producer": "Cisco XDR Analytics ",
+                    "schema_version": "1.3.13",
+                    "source": "Cisco XDR Analytics ",
+                    "source_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1",
+                    "timestamp": "2023-12-30T16:56:17.288Z",
+                    "title": "Watchlist Interaction",
+                    "tlp": "amber",
+                    "type": "indicator",
+                    "valid_time": {
+                        "end_time": "2525-01-01T00:00:00.000Z",
+                        "start_time": "2023-12-30T15:50:00.000Z"
+                    }
+                }
+            ],
+            "relationships": [
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2024-03-20T19:27:23.401Z",
+                    "external_ids": [
+                        "swc-sighting-incident-03b1a53eaabb85fd54f5a22900fb2f2bbeca3937"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-f3f5312f-42d5-4cdd-a3a9-ed0b270dacd1",
+                    "modified": "2024-03-20T19:27:23.401Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relationship_type": "member-of",
+                    "schema_version": "1.3.14",
+                    "source": "Cisco XDR Analytics ",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-58650666-0cfd-491d-869c-96674c0cbfd5",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/incident/incident-1e18a0d0-70b6-4115-8218-9e2d2cec9306",
+                    "timestamp": "2024-03-20T19:27:23.401Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2024-03-20T19:27:23.401Z",
+                    "external_ids": [
+                        "swc-sighting-sighting-76da46041d8b339c176904b9f5366c4df15ee36d"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-e6e10542-1c7f-45b0-aa69-eeded4cd6a93",
+                    "modified": "2024-03-20T19:27:23.401Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relationship_type": "based-on",
+                    "schema_version": "1.3.14",
+                    "source": "Cisco XDR Analytics ",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-58650666-0cfd-491d-869c-96674c0cbfd5",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-5b7455a7-d843-4650-b575-0bc656978af4",
+                    "timestamp": "2024-03-20T19:27:23.401Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2024-03-20T19:27:23.401Z",
+                    "external_ids": [
+                        "swc-sighting-indicator-f46462ca18642a4ed7e91113701cc5ef703229ca"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-5f9bdc40-fcae-4dd0-88f8-5e9e78922b4f",
+                    "modified": "2024-03-20T19:27:23.401Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relationship_type": "sighting-of",
+                    "schema_version": "1.3.14",
+                    "source": "Cisco XDR Analytics ",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-58650666-0cfd-491d-869c-96674c0cbfd5",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/indicator/indicator-9c39b5cf-1948-4505-840b-06f6e968cc52",
+                    "timestamp": "2024-03-20T19:27:23.401Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                },
+                {
+                    "client_id": "iroh-async-client-id",
+                    "created": "2024-03-20T19:27:40.118Z",
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-c414226d-92bc-4526-921e-089baa2003c0",
+                    "modified": "2024-03-20T19:27:40.118Z",
+                    "owner": "org-virtual-user-zzzzzz-608e-4a4e-8b62-b17f9064f9bd",
+                    "relationship_type": "related-to",
+                    "schema_version": "1.3.14",
+                    "source": "IROH Engine",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/incident/incident-1e18a0d0-70b6-4115-8218-9e2d2cec9306",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/incident/incident-1e18a0d0-70b6-4115-8218-9e2d2cec9306",
+                    "timestamp": "2024-03-20T19:27:40.118Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2024-03-20T19:27:23.401Z",
+                    "external_ids": [
+                        "swc-sighting-incident-025f7075b8a2f75b77b6612fe1e3071b94fcc640"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-e58e4d34-b4cf-4096-835a-b2bfb14acdbb",
+                    "modified": "2024-03-20T19:27:23.401Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relationship_type": "member-of",
+                    "schema_version": "1.3.14",
+                    "source": "Cisco XDR Analytics ",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-5b7455a7-d843-4650-b575-0bc656978af4",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/incident/incident-1e18a0d0-70b6-4115-8218-9e2d2cec9306",
+                    "timestamp": "2024-03-20T19:27:23.401Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "created": "2024-03-20T19:27:23.401Z",
+                    "external_ids": [
+                        "swc-sighting-indicator-762ac7216bd724c58770a4855296f5d7c2cb536c"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/relationship/relationship-9e6ce075-d58d-4788-9773-28cf994f3496",
+                    "modified": "2024-03-20T19:27:23.401Z",
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relationship_type": "sighting-of",
+                    "schema_version": "1.3.14",
+                    "source": "Cisco XDR Analytics ",
+                    "source_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-5b7455a7-d843-4650-b575-0bc656978af4",
+                    "target_ref": "https://private.intel.eu.amp.cisco.com:443/ctia/indicator/indicator-30455240-d11c-4800-b11d-4f4fc555164f",
+                    "timestamp": "2024-03-20T19:27:23.401Z",
+                    "tlp": "amber",
+                    "type": "relationship"
+                }
+            ],
+            "sightings": [
+                {
+                    "client_id": "client-xxxxx",
+                    "confidence": "High",
+                    "count": 1,
+                    "created": "2024-03-20T19:27:22.557Z",
+                    "description": "|**Alert**|[User Watchlist Hit - #331](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331)|\n|:-|:-|\n|**Source**|[ona-1cda43](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/device/summary/?id=434)|\n|**Description**|Device exchanged traffic with an IP address on a user-supplied watchlist or attempted to resolve a domain name on that watchlist. This may indicate a device is compromised. (Watchlists: XDR_IPV4_Feed)|\n|**Next Steps**|Reference the supporting evidence to examine the entity's traffic profile and determine if the behavior is malicious. Update your firewall and blocklist rules as necessary.|\n|**Updated**|2024-03-20T19:27:19Z|\n|**MITRE Tactics**|**Command and Control** ([TA0011](https://attack.mitre.org/tactics/TA0011)): The adversary is trying to communicate with compromised systems to control them. Command and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid detection. There are many ways an adversary can establish command and control with various levels of stealth depending on the victim\u2019s network structure and defenses.|\n|**MITRE Technique**|**Web Service** ([T1102](https://attack.mitre.org/techniques/T1102)): Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system. Popular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection. Use of Web services may also protect back-end C2 infrastructure from discovery through malware binary analysis while also enabling operational resiliency (since this infrastructure may be dynamically changed).|\n|**Priority**|High|",
+                    "external_ids": [
+                        "swc-alert_sighting-1112ffda457ab2cd7a7c7bc937e078a639d1170d"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-58650666-0cfd-491d-869c-96674c0cbfd5",
+                    "internal": true,
+                    "modified": "2024-03-20T19:27:22.557Z",
+                    "observed_time": {
+                        "end_time": "2024-03-20T18:30:00.000Z",
+                        "start_time": "2024-03-20T18:20:00.000Z"
+                    },
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "resolution": "detected",
+                    "schema_version": "1.3.14",
+                    "sensor": "endpoint",
+                    "severity": "Critical",
+                    "short_description": "Device exchanged traffic with an IP address on a user-supplied watchlist or attempted to resolve a domain name on that watchlist. This may indicate a device is compromised. (Watchlists: XDR_IPV4_Feed)",
+                    "source": "Cisco XDR Analytics ",
+                    "source_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331",
+                    "targets": [
+                        {
+                            "observables": [
+                                {
+                                    "type": "swc_device_id",
+                                    "value": "434"
+                                }
+                            ],
+                            "observed_time": {
+                                "end_time": "2024-03-20T18:30:00.000Z",
+                                "start_time": "2024-03-20T18:20:00.000Z"
+                            },
+                            "type": "endpoint"
+                        }
+                    ],
+                    "timestamp": "2024-03-20T18:30:00.000Z",
+                    "title": "User Watchlist Hit on ona-1cda43",
+                    "tlp": "amber",
+                    "type": "sighting"
+                },
+                {
+                    "client_id": "client-xxxxx",
+                    "confidence": "High",
+                    "count": 2,
+                    "created": "2024-03-20T19:27:22.557Z",
+                    "data": {
+                        "columns": [
+                            {
+                                "name": "Time",
+                                "type": "string"
+                            },
+                            {
+                                "name": "Watchlists",
+                                "type": "string"
+                            },
+                            {
+                                "name": "External IP",
+                                "type": "observable"
+                            },
+                            {
+                                "name": "Domain",
+                                "type": "string"
+                            },
+                            {
+                                "name": "Bytes in",
+                                "type": "integer"
+                            },
+                            {
+                                "name": "Bytes out",
+                                "type": "integer"
+                            }
+                        ],
+                        "rows": [
+                            [
+                                "2024-03-20T18:20:00Z",
+                                "XDR_IPV4_Feed",
+                                {
+                                    "type": "ip",
+                                    "value": "51.38.113.118"
+                                },
+                                "",
+                                1024,
+                                1024
+                            ],
+                            [
+                                "2024-03-20T18:20:00Z",
+                                "XDR_IPV4_Feed",
+                                {
+                                    "type": "ip",
+                                    "value": "146.59.35.38"
+                                },
+                                "",
+                                896,
+                                896
+                            ]
+                        ]
+                    },
+                    "description": "|**Observation Type**|[Watchlist Interaction](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1)|\n|:-|:-|\n|**Description**|Device communicated with an IP address that is on a watchlist (either explicitly or implicitly via a domain name).|\n|**Earliest observation time**|2024-03-20T18:20:00Z|\n|**Latest observation time**|2024-03-20T18:20:00Z|\n|**Associated Alert**|[User Watchlist Hit #331](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331)|",
+                    "external_ids": [
+                        "swc-observations-091547925ad8a3cb6c83572b6530b5fe8a62c150"
+                    ],
+                    "groups": [
+                        "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+                    ],
+                    "id": "https://private.intel.eu.amp.cisco.com:443/ctia/sighting/sighting-5b7455a7-d843-4650-b575-0bc656978af4",
+                    "internal": true,
+                    "modified": "2024-03-20T19:27:22.557Z",
+                    "observables": [
+                        {
+                            "type": "ip",
+                            "value": "192.168.100.50"
+                        },
+                        {
+                            "type": "ip",
+                            "value": "146.59.35.38"
+                        },
+                        {
+                            "type": "ip",
+                            "value": "51.38.113.118"
+                        }
+                    ],
+                    "observed_time": {
+                        "end_time": "2024-03-20T18:20:00.000Z",
+                        "start_time": "2024-03-20T18:20:00.000Z"
+                    },
+                    "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+                    "relations": [
+                        {
+                            "origin": "Cisco XDR Analytics ",
+                            "origin_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1",
+                            "related": {
+                                "type": "swc_device_id",
+                                "value": "434"
+                            },
+                            "relation": "Connected_To",
+                            "source": {
+                                "type": "ip",
+                                "value": "192.168.100.50"
+                            }
+                        },
+                        {
+                            "origin": "Cisco XDR Analytics ",
+                            "origin_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1",
+                            "related": {
+                                "type": "swc_device_id",
+                                "value": "434"
+                            },
+                            "relation": "Connected_To",
+                            "source": {
+                                "type": "ip",
+                                "value": "51.38.113.118"
+                            }
+                        },
+                        {
+                            "origin": "Cisco XDR Analytics ",
+                            "origin_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1",
+                            "related": {
+                                "type": "swc_device_id",
+                                "value": "434"
+                            },
+                            "relation": "Connected_To",
+                            "source": {
+                                "type": "ip",
+                                "value": "146.59.35.38"
+                            }
+                        }
+                    ],
+                    "resolution": "detected",
+                    "schema_version": "1.3.14",
+                    "sensor": "endpoint",
+                    "severity": "Critical",
+                    "short_description": "Device communicated with an IP address that is on a watchlist (either explicitly or implicitly via a domain name).",
+                    "source": "Cisco XDR Analytics ",
+                    "source_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/observations/selected/type/watchlist_interaction_v1",
+                    "targets": [
+                        {
+                            "observables": [
+                                {
+                                    "type": "swc_device_id",
+                                    "value": "434"
+                                }
+                            ],
+                            "observed_time": {
+                                "end_time": "2024-03-20T18:20:00.000Z",
+                                "start_time": "2024-03-20T18:20:00.000Z"
+                            },
+                            "type": "endpoint"
+                        }
+                    ],
+                    "timestamp": "2024-03-20T18:20:00.000Z",
+                    "title": "Watchlist Interaction on ona-1cda43",
+                    "tlp": "amber",
+                    "type": "sighting"
+                }
+            ]
+        },
+        "created": "2024-03-20T19:27:41.849Z",
+        "description": "|**Alert**|[User Watchlist Hit - #331](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331)|\n|:-|:-|\n|**Source**|[ona-1cda43](https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/device/summary/?id=434)|\n|**Description**|Device exchanged traffic with an IP address on a user-supplied watchlist or attempted to resolve a domain name on that watchlist. This may indicate a device is compromised. (Watchlists: XDR_IPV4_Feed)|\n|**Next Steps**|Reference the supporting evidence to examine the entity's traffic profile and determine if the behavior is malicious. Update your firewall and blocklist rules as necessary.|\n|**Updated**|2024-03-20T19:27:26Z|\n|**MITRE Tactics**|**Command and Control** ([TA0011](https://attack.mitre.org/tactics/TA0011)): The adversary is trying to communicate with compromised systems to control them. Command and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid detection. There are many ways an adversary can establish command and control with various levels of stealth depending on the victim\u2019s network structure and defenses.|\n|**MITRE Technique**|**Web Service** ([T1102](https://attack.mitre.org/techniques/T1102)): Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system. Popular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection. Use of Web services may also protect back-end C2 infrastructure from discovery through malware binary analysis while also enabling operational resiliency (since this infrastructure may be dynamically changed).|\n|**Priority**|High|",
+        "discovery_method": "Monitoring Service",
+        "enrichment_status": "enriched",
+        "external_ids": [
+            "swc-alert-cce4e49c40178edc24b514e61a3624affae10f0a"
+        ],
+        "external_references": [
+            {
+                "source_name": "Cisco XDR Analytics ",
+                "url": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331"
+            }
+        ],
+        "groups": [
+            "zzzzzz-608e-4a4e-8b62-b17f9064f9bd"
+        ],
+        "id": "https://private.intel.eu.amp.cisco.com:443/ctia/incident/incident-1e18a0d0-70b6-4115-8218-9e2d2cec9306",
+        "incident_time": {
+            "discovered": "2024-03-20T18:20:00.000Z",
+            "opened": "2024-03-21T10:40:29.261Z",
+            "reported": "2024-03-20T19:27:19.000Z"
+        },
+        "modified": "2024-03-21T10:40:29.261Z",
+        "owner": "zzzzzz-3b8c-41a6-b0ea-a86e5f95d7a0",
+        "promotion_method": "Automated",
+        "schema_version": "1.3.14",
+        "scores": {
+            "asset": 10,
+            "global": 532,
+            "ttp": 53
+        },
+        "severity": "Critical",
+        "short_description": "Device exchanged traffic with an IP address on a user-supplied watchlist or attempted to resolve a domain name on that watchlist. This may indicate a device is compromised. (Watchlists: XDR_IPV4_Feed)",
+        "source": "Cisco XDR Analytics ",
+        "source_uri": "https://cdo-cisco-xxxxxx.obsrvbl.com/v2/#/alerts/details?id=331",
+        "status": "Open",
+        "tactics": [
+            "TA0011"
+        ],
+        "techniques": [
+            "T1102"
+        ],
+        "timestamp": "2024-03-20T19:27:26.000Z",
+        "title": "User Watchlist Hit on ona-1cda43",
+        "tlp": "amber",
+        "type": "incident"
+    }
+]
