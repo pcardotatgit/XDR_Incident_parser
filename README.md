@@ -6,6 +6,8 @@ In this repo you will find examples of codes for parsing XDR Incident described 
 
 ### Step 1 : put the **incident-summary.json** file to analyse into the **./incident-summary** subfolder
 
+This  **incident-summary.json** file is supposed to have been collected from a XDR Tenant thanks to the **1-select_and_get_incident-summary_from a_source_tenant.py** script located into the  [XDR_copy_and_paste_incidents](https://github.com/pcardotatgit/XDR_copy_and_paste_incidents) repository.
+
 ### Have a visual representation of the Incident (Optional) 
 
 Run the **1-incident-summary_json_to_dtree_graph.py** script.
@@ -28,4 +30,4 @@ click on the **open all** link at the top of the graph to see the whole file dat
 
 run the **2-parse_incident_summary.py** script and have a look the parsing result into the console.
 
-This scripts gives some example of functions that parse the JSON file and extract from it some data.
+This script gives some example of functions that parse the JSON file and extract from it some data.
