@@ -12,7 +12,7 @@ This  **incident-summary.json** file is supposed to have been collected from a X
 
 Run the **1-incident-summary_json_to_dtree_graph.py** script.
 
-This script creates a javascript tree graph that represent the Incident content. This graph goal is to help you to understant the Incident structure, keys and values.
+This script creates a javascript tree graph that represent the Incident content. This graph goal is to help you to understand the Incident structure, keys and values.
 
 The goal of this is to help you to parse quickly the data inside the JSON result. 
 
@@ -30,4 +30,4 @@ click on the **open all** link at the top of the graph to see the whole file dat
 
 run the **2-parse_incident_summary.py** script and have a look the parsing result into the console.
 
-This script gives some example of functions that parse the JSON file and extract from it some data.
+This script gives some example of functions that parse the JSON file and extract  some data from it.
